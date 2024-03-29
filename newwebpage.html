@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Villaa</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="px-12">
-    <div class="flex justify-between item-center mx-7 mt-7 border-solid border-2 border-white ">
+<body class=" ml-7 md:px-12">
+    <div class="flex justify-between items-center mx-2 md:mt-7 border-solid border-2 border-white ">
         <div class="font-bold text-3xl">
             <h1>VILLA</h1>
         </div>
+        <svg class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+            stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <div class="flex justify-between gap-6 items-center  mt-4 md:mt-0 hidden md:flex ">
 
-        <div class="flex justify-between gap-6 item-center">
             <p class="text-red-600">Home</p>
-            <p class="text-red-600">Properties</p>
+            <p>Properties</p>
             <p>Property Details</p>
             <p>Contact us</p>
             <button class="bg-red-600 text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
@@ -27,21 +31,20 @@
 
     <P class="text-red-600 mx-7 mt-7">| BEST IDEA</P><br>
 
-    <div class="mx-7 mt-7 flex justify-between">
+    <div class="px-2 mx-2 md:mx-7 mt-7 flex flex-col md:flex-row justify-between items-center ">
         <div class="">
             <p class="text-3xl font-bold">Find Your Best Deal<br>
                 Right Now!</p><br><br>
-            
+
         </div>
-        <div class="flex gap-6">
-            <button class="bg-red-600 text-white font-bold rounded h-12 px-2">Apartment</button>
-            <button class="bg-black	 text-white font-bold rounded h-12 px-2	">Villa House</button>
-            <button class="bg-black	 text-white font-bold rounded h-12 px-2	">Penthouse</button>
+        <div class=" flex  flex-col md:flex-row gap-6">
+            <button class="bg-red-600 text-white font-bold rounded h-12 px-">Apartment</button><hr>
+            <button class="bg-black	 text-white font-bold rounded h-12 px-2">Villa House</button><hr>
+            <button class="bg-black	 text-white font-bold rounded h-12 px-2	">Penthouse</button><hr>
         </div>
 
     </div>
-    
-    <div class="flex justify-between ml-7">
+    <div class="flex flex-col md:flex-row justify-between items-center mx-2 md:ml-7 mt-7">
         <div class="text-lg">
             <div class="flex justify-between gap-8">
                 <p>Total Flat Space</p>
@@ -63,12 +66,11 @@
                 <p>Payment Process</p><hr>
                 <p class="font-bold">Bank</p>
             </div><hr>
-        </div>
-
+        </div><br>
 
         <div>
-            <img src="./images/property-05.jpg" alt="" width="400" height="">
-        </div>
+            <img src="./images/property-05.jpg" alt="" width="350" height="">
+        </div><br><br>
 
         <div>
             <p class="font-bold"> Extra Info About Property</p><br>
@@ -80,7 +82,7 @@
             <p>When you neeed free CSS templates, you <br> can simply type TemplateMo in any search <br> engine
                 website.In
                 addition,you can type <br>templatemo portfolio ,templatemo one page layouts, etc.</p>
-                <button class="bg-red-600 text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
+            <button class="bg-red-600 text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
         </div>
     </div>
 
