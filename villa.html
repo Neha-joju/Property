@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./villa.js"></script>
     <link rel="stylesheet" href="villa.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="body">
+<body>
     <div class="headin">
         <div class="topp">
             <div class="top">
@@ -23,31 +26,34 @@
 
         </div>
         <div class="icons">
-            <img src="./images/fbicon.png" alt="" width="20" height="20">
-            <img src="./images/linkedin.png" alt="" width="20" height="20">
-            <img src="./images/instaicon.png" alt="" width="20" height="20">
-
+            <a href="https://www.facebook.com/"><img src="./images/fbicon.png" alt="" width="20" height="20"></a>
+            <a href="https://www.linkedin.com/"><img src="./images/linkedin.png" alt="" width="20" height="20"></a>
+            <a href="https://www.instagram.com/"><img src="./images/instaicon.png" alt="" width="20" height="20"></a>
         </div>
 
     </div>
-    <div class="parent">
-        <div class="villa">
-            <h3>VILLA</h3>
+    <div class="parent" class=" flex flex-col">
+        <div class="flex flex-row justify-between gap-14">
+            <div class="villa">
+                <h3>VILLA</h3>
+            </div>
+            <div onclick="ham()">
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+                    stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
         </div>
-        <div>
-            <svg class="svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-            stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-        </div>
-        
-        <div class="child">
 
-            <p class="home">Home</p>
-            <p>Properties</p>
-            <p>Property Details</p>
-            <p>Contact us</p>
-            <p>Schedule a visit</p>
+
+        <div class="child" id="hamburger">
+
+            <p class=" text-red-600 hover:underline">Home</p>
+            <p class="hover:underline hover:text-red-600">Properties</p>
+            <p class="hover:underline hover:text-red-600">Property Details</p>
+            <p class="hover:underline hover:text-red-600">Contact us</p>
+            <p class="hover:underline hover:text-red-600">Schedule a visit</p>
         </div>
 
     </div>
@@ -74,59 +80,73 @@
                 <p>Why is Villa Agency the best ?</p>
             </div>
             <div class="iconfour">
-                <div class="iconstext">
+                <div class="iconstext gap-6">
                     <img src="./images/info-icon-01.png" alt="" width="30px" height="30px">
                     <p>250 m2 <br>Total flat space</p>
 
                 </div>
-                <div class="iconstext">
+                <div class="iconstext gap-6">
                     <img src="./images/info-icon-02.png" alt="" width="30px" height="30px">
                     <p>Contract<br>Contract Ready</p>
 
                 </div>
-                <div class="iconstext">
+                <div class="iconstext gap-6">
                     <img src="./images/info-icon-03.png" alt="" width="30px" height="30px">
                     <p>Payment<br>Payment Ready</p>
 
                 </div>
-                <div class="iconstext">
+                <div class="iconstext gap-6">
                     <img src="./images/info-icon-04.png" alt="" width="30px" height="30px">
                     <p>Safety<br>24/7 under control</p>
 
                 </div>
             </div>
         </div>
-        <p class="proj"><b>4 Projects</b></p>
+
+
+        <div class=" flex  flex-col items-center gap-6">
+        
+                <p class="text-red-600">| video view</p>
+        
+            <div>
+                <h2 class="text-lg font-bold">Get Closer View</h2>
+            </div>
+            <div>
+                <video width="800px" height="700px" controls>
+                <source src="./5744424-uhd_3840_2160_30fps.mp4">
+            </video>
+        </div>
+        </div>
+        <p class="text-center"><b>4 Projects</b></p>
         <div class="imgtwo">
-            <div class="pro1">
+            <div class="pro1 border-solid border-4">
                 <img src="./images/property-01.jpg" alt="">
                 <p class="underimg">Model Villa 800,Oakland</p>
                 <img src="./icon loc.png" alt="" width="15px" height="15px">
                 Oakland,CA
             </div>
-            <div class="pro2">
+            <div class="pro2 border-solid border-4">
                 <img src="./images/property-02.jpg" alt="">
-                <p class="underimg">Model Villa 650,Burbank</p> 
+                <p class="underimg">Model Villa 650,Burbank</p>
                 <img src="./icon loc.png" alt="" width="15px" height="15px">
                 Burbank,CA <br>
             </div>
         </div>
         <div class="imgtwo">
-            <div>
+            <div class="border-solid border-4	">
                 <img src="./images/property-03.jpg" alt="">
                 <p class="underimg">Model Villa 700,Burbank</p>
                 <img src="./icon loc.png" alt="" width="15px" height="15px">
                 Burbank,CA
             </div>
-            <div>
+            <div class="border-solid border-4">
                 <img src="./images/property-04.jpg" alt="">
                 <p class="underimg">Model Villa 600,Oakland</p>
                 <img src="./icon loc.png" alt="" width="15px" height="15px">
                 Oakland,CA
             </div>
         </div>
-
-
+    </div>
 </body>
 
 </html>

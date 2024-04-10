@@ -3,7 +3,7 @@
     justify-content: space-between;
     margin-left: 10px;
     align-items: center;
-    
+    flex-direction: column;
 }
 
 
@@ -36,12 +36,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px;
 }
 
 
-.home {
+/* .home {
     color: red;
-}
+
+} */
 
 .bgimg {
     background-image: url(./images/banner-01.jpg);
@@ -117,6 +119,7 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    padding: 30px;
 }
 
 .svg{
@@ -138,12 +141,16 @@
 }
 
 
+
 @media only screen and (min-width : 768px) {
+    .parent{
+        flex-direction: row;
+    }
     .child {
         display: flex;
         flex-direction: row;
         gap: 30px;
-        display: none;
+        /* display: none; */
     }
 
     .bgimg {
@@ -182,6 +189,9 @@
         flex-direction: row;
         padding-top: 20px;
     
+    }
+    .svg{
+        display: none;
     }
 
 }
