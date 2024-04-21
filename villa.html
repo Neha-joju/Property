@@ -10,8 +10,71 @@
     <link rel="stylesheet" href="villa.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
+<!-- <style> 
+    body{ 
+      margin: 0; 
+      padding: 0; 
+     } 
+      
+     .loader{ 
+       position: absolute; 
+       top: 50%; 
+       left: 50%; 
+       transform: translate(-50%, -50%); 
+       display: flex; 
+       align-items: center; 
+         
+     } 
+     /* Creating the dots */ 
+     span{ 
+       height: 25px; 
+       width: 25px; 
+       margin-right: 10px; 
+       border-radius: 50%; 
+       background-color: green; 
+       animation: loading 1s linear infinite; 
+     } 
+     @keyframes loading { 
+   0%{ 
+    transform: translateX(0); 
+   } 
+   25%{ 
+    transform: translateX(15px); 
+   } 
+   50%{ 
+    transform: translateX(-15px); 
+   } 
+   100%{ 
+    transform: translateX(0); 
+   } 
+     
+ } 
+ span:nth-child(1){ 
+  animation-delay: 0.1s; 
+} 
+span:nth-child(2){ 
+  animation-delay: 0.2s; 
+} 
+span:nth-child(3){ 
+  animation-delay: 0.3s; 
+} 
+span:nth-child(4){ 
+  animation-delay: 0.4s; 
+} 
+span:nth-child(5){ 
+  animation-delay: 0.5s; 
+} 
+</style> -->
 
 <body>
+ <!-- <div class="loader"> 
+        <span></span> 
+        <span ></span> 
+        <span ></span> 
+        <span ></span> 
+        <span></span> 
+        <span></span> 
+      </div>  -->
     <div class="headin">
         <div class="topp">
             <div class="top">
@@ -131,118 +194,157 @@
 
         </div>
     
-        <div class="px-12 py-12">
+        <div class=" md:px-12 py-12 flex flex-col gap-6">
             <p class="text-center"><b>Projects</b></p><br>
+            <div class="">
+                <div class="grid grid-cols-3">
 
-            <div class="grid grid-cols-3 gap-6">
-
-                <div class="pro1 border-solid border-4 bg-gray-200 ">
-                    <img src="./images/property-01.jpg" alt="" class="px-4">
-                    <div class="flex justify-between py-8 px-4">
-                        <button class="bg-red-300 px-2">Luxury villa</button>
-                        <p class="text-red-400">$2.264.000</p>
+                    <div class="pro1 border-solid border-4 bg-gray-200 ">
+                        <img src="./images/property-01.jpg" alt="" class="px-4">
+                        <div class="flex justify-between py-8 px-4">
+                            <button class="bg-red-300 px-2">Luxury villa</button>
+                            <p class="text-red-400">$2.264.000</p>
+                        </div>
+                        <p class="text-lg font-bold">18 Old Street Miami,OR 97219</p>
+                        
+                        <p ></p>Bedrooms<b>8</b><br>
+                         Bathrooms: <b>8</b> 
+                         <br> Area: <b>225m2</b> <br>
+                         Floor: <b>3</b><br>
+                          Parking: <b>8 spots</b></p>
+                        
+                         <div class="py-12 ">
+                            <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
+                        </div>
+                        
                     </div>
-                    <p class="text-lg font-bold">18 Old Street Miami,OR 97219</p>
-                    
-                    <p ></p>Bedrooms<b>8</b><br>
-                     Bathrooms: <b>8</b> 
-                     <br> Area: <b>225m2</b> <br>
-                     Floor: <b>3</b><br>
-                      Parking: <b>8 spots</b></p>
-                    
-                     <div class="py-12 ">
-                        <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
+                    <div class="pro2 border-solid border-4 bg-gray-200">
+                        <img src="./images/property-02.jpg" alt="" class="px-4">
+                        <div class="flex justify-between py-8 px-4">
+                            <button class="bg-red-300 px-2">Luxury villa</button>
+                            <p class="text-red-400">$1.180.000</p>
+                        </div>
+                        <p class="text-lg font-bold text-center">54 New Street Florida,OR 27001</p>
+                        <p>Bedrooms: 6</b><br>
+                        Bathrooms: 5</b><br>
+                        Area: 450m2</b><br>
+                        Floor: 3</b><br>
+                        Parking: 8 spots</b></p>
+                        <div class="py-12 text-center">
+                            <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
+                        </div> 
+                         
+                     </div>
+                    <div class="border-solid border-4 bg-gray-200">
+                        <img src="./images/property-03.jpg" alt="" class="px-4">
+                        <div class="flex justify-between py-8 px-4">
+                            <button class="bg-red-300 px-2">Luxury villa</button>
+                            <p class="text-red-400">$1.180.000</p>
+                        </div>
+                        <p class="text-lg font-bold text-center">26 Mid Street Portland,OR 38540</p>
+                        <p>Bedrooms: 5</b></p>
+                        <p>Bathrooms: 4</b></p>
+                        <p>Area: 255m2</b> </p>
+                        <p>Floor: 3</b></p>
+                        <p>Parking: 10 spots</b></p>
+                        <div class="py-12 text-center">
+                            <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
+                        </div>
                     </div>
-                    
                 </div>
-                <div class="pro2 border-solid border-4 bg-gray-200">
-                    <img src="./images/property-02.jpg" alt="" class="px-4">
-                    <div class="flex justify-between py-8 px-4">
-                        <button class="bg-red-300 px-2">Luxury villa</button>
-                        <p class="text-red-400">$1.180.000</p>
+                <div class="grid grid-cols-3">
+                    <div class="border-solid border-4 bg-gray-200">
+                        <img src="./images/property-04.jpg" alt="" class="px-4">
+                        <div class="flex justify-between py-8 px-4">
+                            <button class="bg-red-300 px-2">Apartment</button>
+                            <p class="text-red-400">$580.000</p>
+                        </div>
+                        <p class="text-lg font-bold text-center">12 Hope Street Portland,OR 12650</p>
+                        <p>Bedrooms: 4</b></p>
+                        <p>Bathrooms: 3</b></p>
+                        <p>Area: 125m2</b></p>
+                        <p>Floor: 25th</b></p>
+                        <p>Parking: 2 cars</b></p>
+                        <div class="py-12 text-center">
+                            <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
+                        </div>
+                        
                     </div>
-                    <p class="text-lg font-bold text-center">54 New Street Florida,OR 27001</p>
-                    <p>Bedrooms: 6</b><br>
-                    Bathrooms: 5</b><br>
-                    Area: 450m2</b><br>
-                    Floor: 3</b><br>
-                    Parking: 8 spots</b></p>
-                    <div class="py-12 text-center">
-                        <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
-                    </div> 
-                     
-                 </div>
-                <div class="border-solid border-4 bg-gray-200">
-                    <img src="./images/property-03.jpg" alt="" class="px-4">
-                    <div class="flex justify-between py-8 px-4">
-                        <button class="bg-red-300 px-2">Luxury villa</button>
-                        <p class="text-red-400">$1.180.000</p>
+                    <div class="border-solid border-4 bg-gray-200">
+                        <img src="./images/property-05.jpg" alt="" class="px-4">
+                        <div class="flex justify-between py-8 px-4">
+                            <button class="bg-red-300 px-2">Penthouse</button>
+                            <p class="text-red-400">$925.600</p>
+                        </div>
+                        <p class="text-lg font-bold text-center">34 Hope Street Portland,OR 42680</p>
+                        <p>Bedrooms: 4</b></p>
+                        <p>Bathrooms: 4</b></p>
+                        <p>Area: 180m2</b></p>
+                        <p>Floor: 38th</b></p>
+                        <p>Parking: 2 cars</b></p>
+                        <div class="py-12 text-center">
+                            <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
+                        </div>
                     </div>
-                    <p class="text-lg font-bold text-center">26 Mid Street Portland,OR 38540</p>
-                    <p>Bedrooms: 5</b></p>
-                    <p>Bathrooms: 4</b></p>
-                    <p>Area: 255m2</b> </p>
-                    <p>Floor: 3</b></p>
-                    <p>Parking: 10 spots</b></p>
-                    <div class="py-12 text-center">
-                        <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
+                    <div class="border-solid border-4 bg-gray-200">
+                        <img src="./images/property-06.jpg" alt="" class="px-4">
+                        <div class="flex justify-between py-8 px-4">
+                            <button class="bg-red-300 px-2">Modern condo</button>
+                            <p class="text-red-400">$450.000</p>
+                        </div>
+                        <p class="text-lg font-bold text-center"></p>
+                        <p>Bedrooms: <b>3</b></p>
+                        <p>Bathrooms: <b>2</b></p>
+                        <p>Area: <b>165m2</b></p>
+                        <p>Floor: <b>26th</b></p>
+                        <p>Parking: <b>3 cars</b></p>
+                        <div class="py-12 text-center">
+                            <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
+                        </div>
+                        
                     </div>
+    
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <p class="text-center">Contact us</p>
+    <div class="flex justify-center flex-row gap-14 " height="700px">
+        
+        <div class="flex  flex-col" id="divi">
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            <div class=" flex justify-between gap-6 flex-row border-solid  border-4 bg-gray-200 w-1/3">
+                <img src="./images/icon loc.png" alt="" width="30px" height="30px">
+                <div>
+                   <p class="text-xl"> 010-020-0340</p>
+                    <p>Phone Number</p>
                 </div>
             </div>
-            <div class="grid md: grid grid-cols-3 gap-6">
-                <div class="border-solid border-4 bg-gray-200">
-                    <img src="./images/property-04.jpg" alt="" class="px-4">
-                    <div class="flex justify-between py-8 px-4">
-                        <button class="bg-red-300 px-2">Apartment</button>
-                        <p class="text-red-400">$580.000</p>
-                    </div>
-                    <p class="text-lg font-bold text-center">12 Hope Street Portland,OR 12650</p>
-                    <p>Bedrooms: 4</b></p>
-                    <p>Bathrooms: 3</b></p>
-                    <p>Area: 125m2</b></p>
-                    <p>Floor: 25th</b></p>
-                    <p>Parking: 2 cars</b></p>
-                    <div class="py-12 text-center">
-                        <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
-                    </div>
-                    
+            <div class="flex justify-between  items-center flex-row border-solid border-4 border-white bg-gray-200 w-1/3">
+                <img src="./images/email-icon.png" alt="" width="30px" height="30px">
+                <div>
+                    <p>info@villa.co</p>
+                    <p>Business Email</p>
                 </div>
-                <div class="border-solid border-4 bg-gray-200">
-                    <img src="./images/property-05.jpg" alt="" class="px-4">
-                    <div class="flex justify-between py-8 px-4">
-                        <button class="bg-red-300 px-2">Penthouse</button>
-                        <p class="text-red-400">$925.600</p>
-                    </div>
-                    <p class="text-lg font-bold text-center">34 Hope Street Portland,OR 42680</p>
-                    <p>Bedrooms: 4</b></p>
-                    <p>Bathrooms: 4</b></p>
-                    <p>Area: 180m2</b></p>
-                    <p>Floor: 38th</b></p>
-                    <p>Parking: 2 cars</b></p>
-                    <div class="py-12 text-center">
-                        <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
-                    </div>
-                </div>
-                <div class="border-solid border-4 bg-gray-200">
-                    <img src="./images/property-06.jpg" alt="" class="px-4">
-                    <div class="flex justify-between py-8 px-4">
-                        <button class="bg-red-300 px-2">Modern condo</button>
-                        <p class="text-red-400">$450.000</p>
-                    </div>
-                    <p class="text-lg font-bold text-center"></p>
-                    <p>Bedrooms: <b>3</b></p>
-                    <p>Bathrooms: <b>2</b></p>
-                    <p>Area: <b>165m2</b></p>
-                    <p>Floor: <b>26th</b></p>
-                    <p>Parking: <b>3 cars</b></p>
-                    <div class="py-12 text-center">
-                        <button class="bg-black text-white font-bold py-2 px-4 rounded">Schedule a visit</button>
-                    </div>
-                    
-                </div>
-
-              </div>
+            </div>
         </div>
+         <div class=" flex gap-6 items-center border-solid border-2 bg-white w-1/3">
+            <form action="">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="fname" placeholder="Your Name"><br>
+                <label for="email">Email Address</label><br>
+                <input type="text" id="email" placeholder="Your Email"><br>
+                <label for="subject">Subject</label><br>
+                <input type="text" id="subject" placeholder="Subject"><br>
+                <label for="message" >Message</label><br>
+                <input type="text" id="message" placeholder="Your Message " textarea=""> <br>
+                <button type="button" id="button" class="bg-black text-white font-bold py-2 px-4 rounded">Send Message</button>
+            </form>
+         </div>
     </div>
  </body>
 
