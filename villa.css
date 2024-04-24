@@ -157,6 +157,19 @@
     height: 500px;
     width: 50%;
 }
+#fname{
+    padding-left: 20px;
+
+}
+#email{
+    padding-left: 20px;
+}
+#subject{
+    padding-left: 20px;
+}
+#message{
+    padding-left: 20px;
+}
 @media only screen and (min-width : 768px) {
     .parent{
         flex-direction: row;
